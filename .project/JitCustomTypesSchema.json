@@ -1,0 +1,78 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "H9hkdq1zmBQPel2DDF5rvSPWPD4FdXKc1K6GMDOhdyqH+h0I9+AHuossb5+p+Ej8f3+crkRYrbWrhdqcUC3olw==",
+        "bundleName": "C6b9c02e3bb974ff1a4f967381d5e1f8f_Pet",
+        "entitiesBundle": {
+          "Types": {
+            "Pet": {
+              "name": "Pet",
+              "properties": [
+                {
+                  "name": "tags____name",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "category_name",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "photoUrls___",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "name",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "tags____id",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Int64, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "id",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Int64, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "category_id",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Int64, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "status",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            }
+          },
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.ConnectorBuilder.IntegrationService.Activities.SWEntities.C6b9c02e3bb974ff1a4f967381d5e1f8f_Pet",
+        "hash": "SDloa2RxMXptQlFQZWwyRERGNXJ2U1BXUEQ0RmRYS2MxSzZHTURPaGR5cUgraDBJOStBSHVvc3NiNStwK0VqOGYzK2Nya1JZcmJXcmhkcWNVQzNvbHc9PQ",
+        "assemblyName": "C6b9c02e3bb974ff1a4f.3AQe8PRL6K1DSJZz2MLZ9U"
+      }
+    }
+  ]
+}
