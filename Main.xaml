@@ -94,39 +94,26 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ucia:GetRecord BindingsVersion="2.1" BusinessEntityName="Pet" ConfiguredBusinessEntity="" ConnectionId="c89f3e47-4034-4e16-b7d0-0fcfd3df5a33" Connector="custom-onlymine-swaggerpetstore" ConnectorName="Swagger Petstore" ConnectorVersion="1.1.0" CrudOperation="Get" DesignConnectionEnabled="True" DisplayName="Get Record" sap:VirtualizedContainerService.HintSize="388,254" sap2010:WorkflowViewState.IdRef="GetRecord_1" IsAdditionalPropertiesActive="False">
+    <ucia:GetRecord BindingsVersion="2.1" BusinessEntityName="Pet" ConfiguredBusinessEntity="" ConnectionId="c89f3e47-4034-4e16-b7d0-0fcfd3df5a33" Connector="custom-onlymine-swaggerpetstore" ConnectorName="Swagger Petstore" ConnectorVersion="1.1.0" CrudOperation="Get" DesignConnectionEnabled="True" DisplayName="Get Record for PetId" sap:VirtualizedContainerService.HintSize="388,254" sap2010:WorkflowViewState.IdRef="GetRecord_1" IsAdditionalPropertiesActive="False">
       <ucia:GetRecord.BusinessEntity>
-        <uibi:BusinessEntity Name="Pet">
+        <uibi:BusinessEntity Metadata="{x:Reference __ReferenceID0}" Name="Pet">
           <uibi:BusinessEntity.AllFields>
             <scg:List x:TypeArguments="uibi:EntityField" Capacity="2">
-              <uiisi:OperationEntityField x:TypeArguments="x:Int32" x:Name="__ReferenceID1" ArgumentDirection="In" ArgumentType="x:Int32" DataType="Int32" Description="ID of pet to return" DisplayName="PetId" FormDataType="ExpressionTextBox" InArgumentValue="3" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="True" IsSelected="False" Location="Path" Name="petId" ShouldFilterOnChange="False">
-                <uiisi:OperationEntityField.ArgumentValue>
-                  <InArgument x:TypeArguments="x:Int32">3</InArgument>
-                </uiisi:OperationEntityField.ArgumentValue>
-                <uiisi:OperationEntityField.Value>
-                  <Literal x:TypeArguments="x:Int32">3</Literal>
-                </uiisi:OperationEntityField.Value>
-              </uiisi:OperationEntityField>
-              <uiisi:OperationEntityField x:TypeArguments="uciascb:Pet" x:Name="__ReferenceID2" ArgumentDirection="Out" ArgumentType="uciascb:Pet" DataType="Pet" Description="The record retrieved by this activity." DisplayName="Pet" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsCustomType="True" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsSelected="False" Location="Body" Name="Pet" OutArgumentValue="[Pet]" ShouldFilterOnChange="False">
-                <uiisi:OperationEntityField.ArgumentValue>
-                  <OutArgument x:TypeArguments="uciascb:Pet">[Pet]</OutArgument>
-                </uiisi:OperationEntityField.ArgumentValue>
-                <uiisi:OperationEntityField.Value>
-                  <VisualBasicReference x:TypeArguments="uciascb:Pet">[Pet]</VisualBasicReference>
-                </uiisi:OperationEntityField.Value>
-              </uiisi:OperationEntityField>
+              <x:Reference>__ReferenceID1</x:Reference>
+              <x:Reference>__ReferenceID2</x:Reference>
             </scg:List>
           </uibi:BusinessEntity.AllFields>
           <uibi:BusinessEntity.EntityMetadata>
-            <uibi:EntityMetadata Metadata="{x:Reference __ReferenceID0}" DisplayName="Pet" EligibleOperations="2" IsCustomEntity="False" Name="Pet" />
+            <uibi:EntityMetadata DisplayName="Pet" EligibleOperations="2" IsCustomEntity="False" Name="Pet">
+              <uibi:EntityMetadata.Metadata>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID0">
+                  <x:String x:Key="Object">Pet</x:String>
+                  <x:String x:Key="FullPath">/pet/{petId}</x:String>
+                  <x:String x:Key="Method">GET</x:String>
+                </scg:Dictionary>
+              </uibi:EntityMetadata.Metadata>
+            </uibi:EntityMetadata>
           </uibi:BusinessEntity.EntityMetadata>
-          <uibi:BusinessEntity.Metadata>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID0">
-              <x:String x:Key="Object">Pet</x:String>
-              <x:String x:Key="FullPath">/pet/{petId}</x:String>
-              <x:String x:Key="Method">GET</x:String>
-            </scg:Dictionary>
-          </uibi:BusinessEntity.Metadata>
           <uibi:BusinessEntity.SelectedFields>
             <scg:List x:TypeArguments="uibi:EntityField" Capacity="4">
               <x:Reference>__ReferenceID1</x:Reference>
@@ -147,14 +134,28 @@
       </ucia:GetRecord.DesignConnectionRequest>
       <ucia:GetRecord.SelectedFields>
         <scg:List x:TypeArguments="uibi:EntityField" Capacity="2">
-          <x:Reference>__ReferenceID1</x:Reference>
-          <x:Reference>__ReferenceID2</x:Reference>
+          <uiisi:OperationEntityField x:TypeArguments="x:Int32" x:Name="__ReferenceID1" ArgumentDirection="In" ArgumentType="x:Int32" DataType="Int32" Description="ID of pet to return" DisplayName="PetId" FormDataType="ExpressionTextBox" InArgumentValue="3" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="True" IsSelected="False" Location="Path" Name="petId" ShouldFilterOnChange="False">
+            <uiisi:OperationEntityField.ArgumentValue>
+              <InArgument x:TypeArguments="x:Int32">3</InArgument>
+            </uiisi:OperationEntityField.ArgumentValue>
+            <uiisi:OperationEntityField.Value>
+              <Literal x:TypeArguments="x:Int32">3</Literal>
+            </uiisi:OperationEntityField.Value>
+          </uiisi:OperationEntityField>
+          <uiisi:OperationEntityField x:TypeArguments="uciascb:Pet" x:Name="__ReferenceID2" ArgumentDirection="Out" ArgumentType="uciascb:Pet" DataType="Pet" Description="The record retrieved by this activity." DisplayName="Pet" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsCustomType="True" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsSelected="False" Location="Body" Name="Pet" OutArgumentValue="[Pet]" ShouldFilterOnChange="False">
+            <uiisi:OperationEntityField.ArgumentValue>
+              <OutArgument x:TypeArguments="uciascb:Pet">[Pet]</OutArgument>
+            </uiisi:OperationEntityField.ArgumentValue>
+            <uiisi:OperationEntityField.Value>
+              <VisualBasicReference x:TypeArguments="uciascb:Pet">[Pet]</VisualBasicReference>
+            </uiisi:OperationEntityField.Value>
+          </uiisi:OperationEntityField>
         </scg:List>
       </ucia:GetRecord.SelectedFields>
       <ucia:GetRecord.TelemetryProperties>
         <scg:Dictionary x:TypeArguments="uibi:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
       </ucia:GetRecord.TelemetryProperties>
     </ucia:GetRecord>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;The pet name is &quot; + Pet.name + &quot;.&quot;]" />
+    <ui:LogMessage DisplayName="Log Message - The Petname is" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;The pet name is &quot; + Pet.name + &quot;.&quot;]" />
   </Sequence>
 </Activity>
